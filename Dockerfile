@@ -48,3 +48,4 @@ RUN ldconfig
 WORKDIR /tmp/kicad-source-mirror
 RUN cmake DCMAKE_BUILD_TYPE=Release -DKICAD_SCRIPTING_ACTION_MENU=ON .
 RUN make && make install
+RUN ldconfig
